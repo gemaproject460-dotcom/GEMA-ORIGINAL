@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <!-- CONEXIÓN CSS -->
+    <link rel="stylesheet" href="productos.css">   <!-- Unir con el css -->
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo-box">
+
+                <img src="Imagenes/LOGO.png" alt="logo">
+
+                <div class="logo-texto">
+                    <h1>GEMA</h1>
+                    <p>GLOBAL EMERGENCY <br> MANAGEMENT ACCESS</p>
+                </div>
+
+            </div>
+
+           
+            <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="Index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+</a>
+
+</div>
+
+        
+    </nav>
+
+        </header>
+
+  <main class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <button class="category-title">CATEGORÍAS</button>
+
+      <ul>
+        <li>🧰 Kits de Emergencia</li>
+        <li>🩹 Primeros Auxilios</li>
+        <li>🔧 Herramientas</li>
+        <li>📡 Comunicación</li>
+      </ul>
+    </aside>
+
+    
+    <div class="card">
+  <div class="img-box">
+    <img src="imagenes/kit.jfif" alt="Kit de Emergencia">
+  </div>
+  <h3>Kit de Emergencia</h3>
+  <p>Incluye suministros básicos para emergencias.</p>
+  <span class="price">B/. 49.99</span>
+  <button>VER PRODUCTO</button>
+</div>
+
+
+
+      <div class="card">
+        <div class="img-box">
+           <img src="Imagenes/botiquin.jfif"alt="botiquin">
+        
+        </div>
+        <h3>Botiquín</h3>
+        <p>Atención rápida en emergencias.</p>
+        <span class="price">B/. 24.99</span>
+        <button>VER PRODUCTO</button>
+      </div>
+
+      <div class="card">
+        <div class="img-box">
+             <img src="Imagenes/led.jfif"alt="linterna">
+        </div>
+        <h3>Linterna LED</h3>
+        <p>Ideal para apagones.</p>
+        <span class="price">B/. 19.99</span>
+        <button>VER PRODUCTO</button>
+      </div>
+
+      <div class="card">
+        <div class="img-box">
+             <img src="Imagenes/radio.jfif"alt="radio">
+        </div>
+        <h3>Radio de Comunicación</h3>
+        <p>Comunicación portátil.</p>
+        <span class="price">B/. 39.99</span>
+        <button>VER PRODUCTO</button>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

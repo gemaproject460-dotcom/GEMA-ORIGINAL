@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIÑOS</title>
+
+    <!-- CONEXIÓN CSS -->
+    <link rel="stylesheet" href="niños.css">   <!-- Unir con el css -->
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo-box">
+
+                <img src="Imagenes/LOGO.png" alt="logo">
+
+                <div class="logo-texto">
+                    <h1>GEMA</h1>
+                    <p>GLOBAL EMERGENCY <br> MANAGEMENT ACCESS</p>
+                </div>
+
+            </div>
+
+           
+        
+    <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="Index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+</a>
+
+</div>
+
+        
+    </nav>
+
+   
+</header>
+    
+   
+
+
+        
+
+
+<!-- =====================================
+        HERO GEMA KIDS
+===================================== -->
+
+<section class="kids-hero">
+
+    <div class="hero-content">
+
+        <span class="kids-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+             <span data-i18n="kidsBadge">GEMA KIDS</span>
+        </span>
+
+        <h1 data-i18n="kidsTitulo">
+    Aprende a protegerte jugando
+</h1>
+
+        <p data-i18n="kidsDescripcion">
+            Descubre qué hacer durante terremotos,
+            inundaciones y otras emergencias mediante
+            juegos y actividades divertidas.
+        </p>
+
+        <a href="#juegos" class="btn-kids">
+            <i class="fa-solid fa-gamepad"></i>
+             <span data-i18n="comenzar">Comenzar</span>
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="Imagenes/kids.png" alt="GEMA Kids">
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+        JUEGOS
+===================================== -->
+
+<section class="kids-section" id="juegos">
+
+    <h2>
+        <i class="fa-solid fa-gamepad"></i>
+        <span data-i18n="aprendeJugando">Aprende Jugando</span>
+    </h2>
+
+    <div class="games-grid">
+
+        <a href="juegos/matchtml.html" class="game-card">
+            <i class="fa-solid fa-brain"></i>
+            <h3 data-i18n="trivia">Trivia</h3>
+            <p data-i18n="triviaTexto">
+                Responde preguntas y demuestra
+                cuánto sabes.
+            </p>
+        </a>
+
+        <a href="#" class="game-card">
+            <i class="fa-solid fa-route"></i>
+            <h3 data-i18n="pareo">Pareo</h3>
+            <p data-i18n="pareoTexto">
+                Relaciona conceptos y encuentra
+                las parejas correctas.
+            </p>
+        </a>
+
+        <a href="#" class="game-card">
+            <i class="fa-solid fa-puzzle-piece"></i>
+            <h3 data-i18n="rompecabezas">Rompecabezas</h3>
+            <p data-i18n="rompecabezasTexto">
+                Arma la imagen correcta
+                paso a paso.
+            </p>
+        </a>
+
+        <a href="#" class="game-card">
+            <i class="fa-solid fa-clone"></i>
+            <h3 data-i18n="memoria">Memoria</h3>
+            <p data-i18n="memoriaTexto">
+                Encuentra las parejas iguales
+                y mejora tu concentración.
+            </p>
+        </a>
+
+    </div>
+
+</section>
+<!-- =====================================
+        FENÓMENOS NATURALES
+===================================== -->
+
+<section class="kids-section">
+
+    <h2>
+        <i class="fa-solid fa-earth-americas"></i>
+          <span data-i18n="exploraFenomenos">Explora los Fenómenos</span>
+    </h2>
+
+    <div class="phenomena-grid">
+       <div class="phenomena-grid">
+
+    <a class="phenomena-card" href="https://spaceplace.nasa.gov/earthquakes/sp/" target="_blank">
+        <i class="fa-solid fa-house-crack"></i>
+        <h3 data-i18n="terremotos">Terremotos</h3>
+
+<p data-i18n="terremotosTexto">
+    Aprende cómo actuar antes, durante y después.
+</p>
+    </a>
+
+    <a class="phenomena-card" href= "https://spaceplace.nasa.gov/la-nina/sp/" target="_blank">
+        <i class="fa-solid fa-cloud-rain"></i>
+        <h3 data-i18n="nina">El Fenómeno de La Niña</h3>
+
+<p data-i18n="ninaTexto">
+    Mantente seguro.
+</p>
+    </a>
+
+    <a class="phenomena-card" href="https://spaceplace.nasa.gov/el-nino/sp/" target="_blank">
+        <i class="fa-solid fa-cloud-bolt"></i>
+        <h3 data-i18n="nino">El Fenómeno del Niño</h3>
+
+<p data-i18n="ninoTexto">
+    Qué es el fenómeno del Niño y cómo afecta el clima.
+</p>
+    </a>
+
+    <a class="phenomena-card" href="https://spaceplace.nasa.gov/volcanoes2/sp/" target="_blank">
+        <i class="fa-solid fa-mountain"></i>
+        <h3 data-i18n="volcanes">Volcanes</h3>
+
+<p data-i18n="volcanesTexto">
+    Conoce las medidas de protección.
+</p>
+    </a>
+
+</div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+        CONSEJOS
+===================================== -->
+
+<section class="kids-section">
+
+    <h2>
+    <i class="fa-solid fa-lightbulb"></i>
+    <span data-i18n="consejos">Consejos de Seguridad</span>
+</h2>
+
+    <div class="tips-grid">
+
+        <div class="tip-card">
+            <i class="fa-solid fa-backpack"></i>
+            <span data-i18n="mochila">
+    Mochila de emergencia
+</span>
+        </div>
+
+        <div class="tip-card">
+            <i class="fa-solid fa-person-circle-check"></i>
+            <span data-i18n="calma">
+    Mantén la calma
+</span>
+        </div>
+
+        <div class="tip-card">
+            <i class="fa-solid fa-users"></i>
+            <span data-i18n="adultos">
+    Escucha a los adultos
+</span>
+        </div>
+
+        <div class="tip-card">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span data-i18n="evacuacion">
+    Conoce las rutas de evacuación
+</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: contacto@gema.org</p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+<script src="niños.js"></script>
+
+</body>
+</html>

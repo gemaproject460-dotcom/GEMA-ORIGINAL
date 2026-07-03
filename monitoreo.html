@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GEMA | Centro Nacional de Monitoreo</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="monitoreo.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--==================================================
+                    HERO
+===================================================-->
+
+<header class="hero-monitor">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            GEMA • Global Emergency Management Access
+        </span>
+
+        <h1>
+
+            Centro Nacional
+            <br>
+            de Monitoreo
+
+        </h1>
+
+       
+
+    </div>
+
+</header>
+
+<!--==================================================
+                PANEL SUPERIOR
+===================================================-->
+
+<section class="dashboard">
+
+    <div class="status-card">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h3>Sistema</h3>
+
+        <span class="status ok">
+
+            Operativo
+
+        </span>
+
+    </div>
+
+    <div class="status-card">
+
+        <i class="fa-solid fa-triangle-exclamation"></i>
+
+        <h3>Nivel Nacional</h3>
+
+        <span class="status warning">
+
+            Bajo
+
+        </span>
+
+    </div>
+
+    <div class="status-card">
+
+        <i class="fa-solid fa-satellite-dish"></i>
+
+        <h3>Recursos</h3>
+
+        <span>
+
+            250+
+
+        </span>
+
+    </div>
+
+    <div class="status-card">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <h3>Actualización</h3>
+
+        <span id="horaActual">
+
+            --:--
+
+        </span>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                FILTROS
+===================================================-->
+
+<section class="filtros">
+
+<h2>
+
+Recursos de Emergencia
+
+</h2>
+
+<div class="filtros-grid">
+
+<label>
+
+<input type="checkbox" checked id="bomberos">
+
+ Bomberos
+
+</label>
+
+<label>
+
+<input type="checkbox" checked id="hospitales">
+
+ Hospitales
+
+</label>
+
+<label>
+
+<input type="checkbox" checked id="policia">
+
+ Policía
+
+</label>
+
+<label>
+
+<input type="checkbox" checked id="sinaproc">
+
+SINAPROC
+
+</label>
+
+<label>
+
+<input type="checkbox" checked id="sangre">
+
+ Bancos de Sangre
+
+</label>
+
+<label>
+
+<input type="checkbox" checked id="refugios">
+
+ Refugios
+
+</label>
+
+</div>
+
+</section>
+
+<!--==================================================
+                MAPA
+===================================================-->
+
+<!--==================================================
+                MAPA
+===================================================-->
+
+<section class="mapa-section">
+
+    <div class="mapa-header">
+
+        <h2>Mapa Nacional</h2>
+
+        <select id="selectorProvincia">
+
+            <option value="">Seleccione una provincia</option>
+            <option value="panama">Panamá</option>
+            <option value="panamaoeste">Panamá Oeste</option>
+            <option value="colon">Colón</option>
+            <option value="cocle">Coclé</option>
+            <option value="veraguas">Veraguas</option>
+            <option value="herrera">Herrera</option>
+            <option value="lossantos">Los Santos</option>
+            <option value="chiriqui">Chiriquí</option>
+            <option value="bocas">Bocas del Toro</option>
+            <option value="darien">Darién</option>
+            <option value="guna">Guna Yala</option>
+            <option value="ngabe">Ngäbe Buglé</option>
+            <option value="embera">Emberá-Wounaan</option>
+
+        </select>
+
+    </div>
+
+    <div id="map"></div>
+
+</section>
+
+<!--==================================================
+        INFORMACIÓN DE LA PROVINCIA
+===================================================-->
+
+<section class="provincia-info">
+
+    <h2>Información de la Provincia</h2>
+
+    <div id="panelProvincia">
+
+        <p>
+            Seleccione una provincia para visualizar
+            sus recursos de emergencia.
+        </p>
+
+    </div>
+
+</section>
+
+<!--==================================================
+        CENTROS DE EMERGENCIA
+===================================================-->
+
+<section class="centros">
+
+    <h2>Localizar Centros de Emergencia</h2>
+
+    <div class="centros-grid">
+
+        <div class="card">
+
+            <i class="fa-solid fa-fire-extinguisher"></i>
+
+            <h3>Bomberos</h3>
+
+            <p>Consultar estaciones disponibles.</p>
+
+            <a href="https://www.bomberos.gob.pa/estaciones/" target="_blank">
+
+                Explorar
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-hospital"></i>
+
+            <h3>Hospitales</h3>
+
+            <p>Centros hospitalarios.</p>
+
+            <a href="#">Explorar</a>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Policía Nacional</h3>
+
+            <p>Estaciones policiales.</p>
+
+            <a href="#">Explorar</a>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-house-flood-water"></i>
+
+            <h3>SINAPROC</h3>
+
+            <p>Direcciones regionales.</p>
+
+            <a href="#">Explorar</a>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            <h3>Bancos de Sangre</h3>
+
+            <p>Centros de donación.</p>
+
+            <a href="#">Explorar</a>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-house"></i>
+
+            <h3>Refugios</h3>
+
+            <p>Refugios temporales.</p>
+
+            <a href="#">Explorar</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                    FOOTER
+===================================================-->
+
+<footer>
+
+    <p>© 2026 GEMA</p>
+
+</footer>
+
+<!-- Leaflet -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Datos -->
+<script src="datos.js"></script>
+
+<!-- Mapa -->
+<script src="monitoreo.js"></script>
+
+</body>
+</html>

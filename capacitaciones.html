@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Capacitaciones | GEMA</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="capacitaciones.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo-box">
+
+                <img src="Imagenes/LOGO.png" alt="logo">
+
+                <div class="logo-texto">
+                    <h1>GEMA</h1>
+                    <p>GLOBAL EMERGENCY <br> MANAGEMENT ACCESS</p>
+                </div>
+
+            </div>
+
+           
+        
+   <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="Index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+</a>
+
+</div>
+
+        
+    </nav>
+
+   
+</header>
+
+
+
+
+       
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+       <h1 data-i18n="heroTitulo">
+        Capacitaciones GEMA
+    </h1>
+
+
+        <p data-i18n="heroTexto">
+
+            Cursos y talleres especializados para empresas,
+            instituciones educativas y público en general.
+
+            Aprende con instructores certificados y fortalece
+            tus conocimientos en prevención y respuesta ante
+            emergencias.
+
+        </p>
+
+    </section>
+
+</div>
+
+<!-- ================= CONTENIDO ================= -->
+
+<div class="container">
+
+    <div class="info-box">
+
+        
+        <h2 class="section-title" data-i18n="cursosTitulo">
+
+            Cursos y Talleres Disponibles
+        </h2>
+
+        <p data-i18n="curso1">
+
+            En GEMA promovemos la preparación mediante
+            capacitaciones dirigidas por profesionales
+            con experiencia en atención de emergencias.
+
+        </p>
+
+        <p data-i18n="curso1">
+
+            Nuestros cursos combinan teoría y práctica,
+            permitiendo desarrollar habilidades para actuar
+            correctamente ante diferentes situaciones.
+
+        </p>
+
+        <p data-i18n="curso3">
+
+            Los talleres están enfocados en ejercicios
+            prácticos y simulaciones reales para fortalecer
+            la capacidad de respuesta.
+
+        </p>
+
+        <p   data-i18n="curso4">
+
+            Todos los programas incluyen certificado de
+            participación según la modalidad del curso.
+
+        </p>
+
+    </div>
+
+    <!-- ================= EMPRESAS ================= -->
+
+    <section class="category">
+
+        <h2  data-i18n="empresasTitulo"> Capacitaciones para Empresas</h2>
+
+        <div class="grid">
+
+            <!-- Brigadas -->
+
+            <div class="card">
+
+                <img src="Imagenes/brigadas.jfif" alt="Brigadas">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="brigadasTitulo">Formación de Brigadas de Emergencia</h3>
+
+                    <p data-i18n="brigadasTexto">
+
+                        Capacitación para responder de forma
+                        organizada ante incendios, evacuaciones
+                        y otras emergencias.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="masInformacion">
+
+                        Más información
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+            <!-- Seguridad -->
+
+            <div class="card">
+
+                <img src="Imagenes/salud.jpg" alt="Seguridad">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="seguridadTitulo">Charlas de Seguridad y Salud Laboral</h3>
+
+                    <p data-i18n="seguridadTexto">
+
+                        Programas dirigidos a fortalecer la
+                        cultura de prevención dentro de la empresa.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="masInformacion">
+
+                        Más información
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+                        <!-- Simulacros -->
+
+            <div class="card">
+
+                <img src="Imagenes/evacua.jfif" alt="Simulacros">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="simulacrosTitulo"> Simulacros de Evacuación</h3>
+
+                    <p data-i18n="simulacrosTexto">
+
+                        Ejercicios prácticos para fortalecer la
+                        respuesta del personal ante diferentes
+                        escenarios de emergencia.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="masInformacion">
+
+                        Más información
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Extintores -->
+
+            <div class="card">
+
+                <img src="Imagenes/fuego.jfif" alt="Extintores">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="extintoresTitulo"> Manejo de Fuego y Extintores</h3>
+
+                    <p data-i18n="extintoresTexto">
+
+                        Aprenda el uso correcto de extintores
+                        y las técnicas básicas para controlar
+                        incendios incipientes.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="masInformacion">
+
+                        Más información
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PÚBLICO ================= -->
+
+    <section class="category">
+
+        <h2 data-i18n="publicoTitulo">
+             Capacitaciones Abiertas al Público
+            </h2>
+
+        <div class="grid">
+
+            <!-- RCP -->
+
+            <div class="card">
+
+                <img src="Imagenes/auxilios.jpg" alt="RCP">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="rcpTitulo">Primeros Auxilios con RCP y DEA</h3>
+
+                    <p data-i18n="rcpTexto">
+
+                        Aprende técnicas para actuar durante
+                        un paro cardiorrespiratorio utilizando
+                        RCP y desfibrilador.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="inscribirme">
+
+                        Inscribirme
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Primera respuesta -->
+
+            <div class="card">
+
+                <img src="Imagenes/firt.jpg" alt="Primera Respuesta">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="primeraRespuestaTitulo">Primera Respuesta ante Emergencias</h3>
+
+                    <p data-i18n="primeraRespuestaTexto">
+
+                        Capacitación para responder correctamente
+                        durante los primeros minutos de una emergencia.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="inscribirme">
+
+                        Inscribirme
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Niños -->
+
+            <div class="card">
+
+                <img src="Imagenes/ninos.png" alt="Niños">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="ninosTitulo" >Primeros Auxilios para Niños</h3>
+
+                    <p data-i18n="ninosTexto">
+
+                        Atención inmediata ante accidentes y
+                        emergencias pediátricas.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="inscribirme">
+
+                        Inscribirme
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Sangrado -->
+
+            <div class="card">
+
+                <img src="Imagenes/sangrado.png" alt="Sangrado">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="sangradoTitulo">Control de Sangrados Masivos</h3>
+
+                    <p data-i18n="sangradoTexto">
+
+                        Técnicas para controlar hemorragias
+                        graves mientras llega la ayuda médica.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="inscribirme">
+
+                        Inscribirme
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- OVE -->
+
+            <div class="card">
+
+                <img src="Imagenes/vehiculos.jfif" alt="OVE">
+
+                <div class="card-content">
+
+                    <h3 data-i18n="oveTitulo">Operador de Vehículos de Emergencia (OVE)</h3>
+
+                    <p data-i18n="oveTexto">
+
+                        Formación especializada para la conducción
+                        segura de vehículos de emergencia.
+
+                    </p>
+
+                    <a href="#" class="btn" data-i18n="inscribirme">
+
+                        Inscribirme
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: contacto@gema.org</p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- JavaScript -->
+
+<script src="capacitaciones.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+/*======================================
+            RESET
+=======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"Segoe UI",sans-serif;
+
+    background:#F4F7FC;
+
+    color:#243447;
+
+}
+
+/*======================================
+            HERO
+=======================================*/
+
+.hero-monitor{
+
+    position:relative;
+
+    height:60vh;
+
+    background:
+    linear-gradient(rgba(8,26,58,.82),rgba(8,26,58,.82)),
+    url("img/panama-monitor.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero-content{
+
+    z-index:2;
+
+    max-width:900px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+
+    margin-bottom:25px;
+
+    letter-spacing:1px;
+
+}
+
+.hero-content h1{
+
+    font-size:4rem;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+}
+
+/*======================================
+            DASHBOARD
+=======================================*/
+
+.dashboard{
+
+    width:90%;
+
+    margin:-60px auto 50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.status-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.status-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.status-card i{
+
+    font-size:40px;
+
+    margin-bottom:18px;
+
+    color:#1E5AA8;
+
+}
+
+.status-card h3{
+
+    margin-bottom:15px;
+
+    color:#0B2D5C;
+
+}
+
+.status{
+
+    font-weight:bold;
+
+}
+
+.ok{
+
+    color:#28C76F;
+
+}
+
+.warning{
+
+    color:#FF9F43;
+
+}
+
+/*======================================
+            FILTROS
+=======================================*/
+
+.filtros{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-bottom:45px;
+
+}
+
+.filtros h2{
+
+    color:#0B2D5C;
+
+    margin-bottom:25px;
+
+}
+
+.filtros-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.filtros label{
+
+    background:white;
+
+    padding:14px 20px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.filtros label:hover{
+
+    background:#1E5AA8;
+
+    color:white;
+
+}
+
+.filtros input{
+
+    margin-right:8px;
+
+}
+
+/*======================================
+            MAPA
+=======================================*/
+
+#map{
+
+    width:100%;
+
+    height:650px;
+
+    border-radius:20px;
+
+}
+
+
+.mapa-section{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-bottom:70px;
+
+}
+
+.mapa-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.mapa-header h2{
+
+    color:#0B2D5C;
+
+}
+
+#selectorProvincia{
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    border:none;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+
+}
+
+#map{
+
+    width:100%;
+
+    height:650px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/*======================================
+        INFORMACIÓN
+=======================================*/
+
+.provincia-info{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-bottom:70px;
+
+}
+
+.provincia-info h2{
+
+    color:#0B2D5C;
+
+    margin-bottom:25px;
+
+}
+
+#panelProvincia{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    min-height:180px;
+
+}
+
+/*======================================
+        CENTROS
+=======================================*/
+
+.centros{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-bottom:80px;
+
+}
+
+.centros h2{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+    color:#0B2D5C;
+
+}
+
+.centros-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:#1E5AA8;
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+.card a{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#1E5AA8;
+
+    transition:.3s;
+
+}
+
+.card a:hover{
+
+    background:#0B2D5C;
+
+}
+
+/*======================================
+            FOOTER
+=======================================*/
+
+footer{
+
+    background:#0B2D5C;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+/*======================================
+        RESPONSIVE
+=======================================*/
+
+@media(max-width:992px){
+
+.dashboard{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.hero-content h1{
+
+font-size:3rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.dashboard{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-content h1{
+
+font-size:2.5rem;
+
+}
+
+.hero-monitor{
+
+height:50vh;
+
+}
+
+#map{
+
+height:450px;
+
+}
+
+.mapa-header{
+
+flex-direction:column;
+
+gap:20px;
+
+align-items:flex-start;
+
+}
+
+}
