@@ -468,5 +468,24 @@ NÚMEROS DE EMERGENCIA
 
 </footer>
 <script src="index.js"></script>
+    <script>
+
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register(
+        "/GEMA-ORIGINAL/service-worker.js"
+    )
+
+    .then(() => {
+        console.log("Service Worker registrado correctamente");
+    })
+
+    .catch(error => {
+        console.log("Error al registrar Service Worker:", error);
+    });
+
+}
+
+</script>
 
 </html>
