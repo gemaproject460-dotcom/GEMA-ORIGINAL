@@ -52,7 +52,48 @@ const ARCHIVOS = [
 
     "/GEMA-ORIGINAL/urbanas.html",
     "/GEMA-ORIGINAL/urbanas.css",
-    "/GEMA-ORIGINAL/urbanas.js"
+    "/GEMA-ORIGINAL/urbanas.js",
+
+    // Imágenes GEMA
+"/GEMA-ORIGINAL/Imagenes/Alpha.jpeg",
+"/GEMA-ORIGINAL/Imagenes/BOMBEROS.png",
+"/GEMA-ORIGINAL/Imagenes/CEFRF.png",
+"/GEMA-ORIGINAL/Imagenes/CRUZ ROJA.png",
+"/GEMA-ORIGINAL/Imagenes/Cruz Roja.jpg",
+"/GEMA-ORIGINAL/Imagenes/GEMA KIDS.png",
+"/GEMA-ORIGINAL/Imagenes/GLOBAL.png",
+"/GEMA-ORIGINAL/Imagenes/IFRC.png",
+"/GEMA-ORIGINAL/Imagenes/KIDS.png",
+"/GEMA-ORIGINAL/Imagenes/LOGO.png",
+"/GEMA-ORIGINAL/Imagenes/MEDECINE.png",
+"/GEMA-ORIGINAL/Imagenes/OIM.png",
+"/GEMA-ORIGINAL/Imagenes/PASO FRIME.png",
+"/GEMA-ORIGINAL/Imagenes/Primer imagen png.png",
+"/GEMA-ORIGINAL/Imagenes/Rompecabezas.png",
+"/GEMA-ORIGINAL/Imagenes/SINAPROC.png",
+"/GEMA-ORIGINAL/Imagenes/UNICEF.png",
+
+"/GEMA-ORIGINAL/Imagenes/auxilios.jpg",
+"/GEMA-ORIGINAL/Imagenes/botiquin.jfif",
+"/GEMA-ORIGINAL/Imagenes/brigadas.jfif",
+"/GEMA-ORIGINAL/Imagenes/capacita.jpg",
+"/GEMA-ORIGINAL/Imagenes/corazon.jfif",
+"/GEMA-ORIGINAL/Imagenes/educa.jpg",
+"/GEMA-ORIGINAL/Imagenes/evacua.jfif",
+"/GEMA-ORIGINAL/Imagenes/firt.jpg",
+"/GEMA-ORIGINAL/Imagenes/fuego.jfif",
+"/GEMA-ORIGINAL/Imagenes/kit.jfif",
+"/GEMA-ORIGINAL/Imagenes/led.jfif",
+"/GEMA-ORIGINAL/Imagenes/natural.jpg",
+"/GEMA-ORIGINAL/Imagenes/ninos.png",
+"/GEMA-ORIGINAL/Imagenes/perro.png",
+"/GEMA-ORIGINAL/Imagenes/perros.png",
+"/GEMA-ORIGINAL/Imagenes/radio.jfif",
+"/GEMA-ORIGINAL/Imagenes/salud.jpg",
+"/GEMA-ORIGINAL/Imagenes/sangrado.png",
+"/GEMA-ORIGINAL/Imagenes/sangre.jpg",
+"/GEMA-ORIGINAL/Imagenes/urbana.jpg",
+"/GEMA-ORIGINAL/Imagenes/vehiculos.jfif"
 
 ];
 
